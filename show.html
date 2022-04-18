@@ -145,58 +145,6 @@
     </div>
 </div>
 
-    <!--                                        Модальное окно Delete-->
-<!--    <div class="modal fade" th:attr="id='deleteUser' + ${user.id}"  tabindex="-1" aria-labelledby="deleteUserLabel" aria-hidden="true">-->
-<!--        <div class="modal-dialog">-->
-<!--            <div class="modal-content">-->
-<!--                <div class="modal-header">-->
-<!--                    <h5 class="modal-title" id="deleteUserLabel">Delete user</h5>-->
-<!--                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-<!--                        <span aria-hidden="true">&times;</span>-->
-<!--                    </button>-->
-<!--                </div>-->
-<!--                &lt;!&ndash;                Форма для заполнения&ndash;&gt;-->
-<!--                <form role="form" class="form-horizontal" th:method="DELETE" th:action="@{/admin/{id}(id=${user.id})}">-->
-<!--                    <div class="container d-flex justify-content-center text-center">-->
-<!--                        <div class="modal-body">-->
-<!--                            <div class="row justify-content-center">-->
-<!--                                <div class="form-group w-50 pb-3">-->
-<!--                                    <label for="delId"><b>ID</b></label>-->
-<!--                                    <input class="form-control" readonly th:value="${user.id}" name="id" id="delId">-->
-<!--                                    <br>-->
-<!--                                    <label for="delName"><b>First name</b></label>-->
-<!--                                    <input class="form-control" readonly th:value="${user.firstName}" name="firstName" id="delName">-->
-<!--                                    <br>-->
-<!--                                    <label for="delLName"><b>Last name</b></label>-->
-<!--                                    <input class="form-control" readonly th:value="${user.lastName}" name="lastName" id="delLName">-->
-<!--                                    <br>-->
-<!--                                    <label for="delAge"><b>Age</b></label>-->
-<!--                                    <input class="form-control" readonly th:value="${user.age}" name="age" id="delAge">-->
-<!--                                    <br>-->
-<!--                                    <label for="delEmail"><b>Email</b></label>-->
-<!--                                    <input type="email" class="form-control" readonly th:value="${user.email}" name="email" id="delEmail">-->
-<!--                                    <br>-->
-<!--                                    &lt;!&ndash;                                        Добавить выбор роли&ndash;&gt;-->
-<!--                                    <label for="delRole"><b>Role</b></label>-->
-<!--                                    <select multiple class="form-control" id="delRole" size="2" name="roles">-->
-<!--                                        <th:block th:each="role : ${listRoles}">-->
-<!--                                            <option th:value="${role.id}" th:text="${role.roleName}">ROLE</option>-->
-<!--                                        </th:block>-->
-<!--                                    </select>-->
-<!--                                    <br>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="modal-footer">-->
-<!--                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-<!--                        <input type="submit" class="btn btn-danger" value="Delete">-->
-<!--                    </div>-->
-<!--                </form>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
 <script type="text/javascript" src = "/static/modal.js"> </script>
 <script type="text/javascript" src = "/static/adminScripts.js"> </script>
 </body>
